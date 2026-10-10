@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVELLE | Konveksi & Garment Eksklusif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-white selection:text-black">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-zinc-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <a href="#" class="text-xl sm:text-2xl font-black tracking-widest text-white">
+                            SAVELLE
+                        </a>
+                        <p class="text-[9px] text-zinc-400 tracking-[0.2em] uppercase font-semibold">NOT FOR EVERYONE!</p>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#beranda" class="text-sm font-medium text-white transition">Beranda</a>
+                    <a href="#layanan" class="text-sm font-medium text-zinc-400 hover:text-white transition">Layanan</a>
+                    <a href="#katalog" class="text-sm font-medium text-zinc-400 hover:text-white transition">Katalog Produk</a>
+                    <a href="#tentang" class="text-sm font-medium text-zinc-400 hover:text-white transition">Tentang Kami</a>
+                    <a href="#kontak" class="text-sm font-medium text-zinc-400 hover:text-white transition">Kontak</a>
+                    <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20ingin%20konsultasi%20pembuatan%20produk." target="_blank" class="px-5 py-2.5 text-sm font-semibold text-black bg-white rounded-xl hover:bg-zinc-200 transition shadow-lg shadow-white/10 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Pesan WA
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center gap-2">
+                    <button id="menu-btn" class="text-zinc-300 hover:text-white focus:outline-none p-2.5">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-white font-medium">Beranda</a>
+            <a href="#layanan" class="block py-2 text-zinc-400 hover:text-white">Layanan</a>
+            <a href="#katalog" class="block py-2 text-zinc-400 hover:text-white">Katalog Produk</a>
+            <a href="#tentang" class="block py-2 text-zinc-400 hover:text-white">Tentang Kami</a>
+            <a href="#kontak" class="block py-2 text-zinc-400 hover:text-white">Kontak</a>
+            <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20ingin%20pesan." target="_blank" class="block py-2 text-center text-black bg-white rounded-xl font-bold mt-2">Pesan via WhatsApp</a>
+        </div>
+    </nav>
+
+    <section id="beranda" class="pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-48 lg:pb-32 flex items-center justify-center relative overflow-hidden bg-black">
+        <div class="absolute -top-40 -left-40 w-72 h-72 sm:w-96 sm:h-96 bg-zinc-800/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-72 h-72 sm:w-96 sm:h-96 bg-zinc-900/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-semibold tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        NOT FOR EVERYONE!
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        SAVELLE <br><span class="text-zinc-400">Konveksi & Garment Premium</span>
+                    </h1>
+                    <p class="text-zinc-400 text-sm sm:text-base lg:text-lg max-w-xl mx-auto lg:mx-0">
+                        Eksklusivitas dalam setiap jahitan. Spesialis pembuatan Kaos Distro, Kemeja PDH/PDL, Jaket, Hoodie, dan merchandise custom berkualitas tinggi di Kartasura.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20ingin%20konsultasi%20pembuatan%20produk." target="_blank" class="w-full sm:w-auto px-6 py-3.5 bg-white text-black hover:bg-zinc-200 font-bold rounded-xl transition shadow-lg shadow-white/10 flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp (+62 852-1262-7456)
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-zinc-900 text-center lg:text-left">
+                        <div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-white">2+</h4>
+                            <p class="text-[11px] sm:text-xs text-zinc-400">Tahun Pengalaman</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-white">1500+</h4>
+                            <p class="text-[11px] sm:text-xs text-zinc-400">Pcs/Bulan Kapasitas</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl sm:text-2xl font-bold text-white">100%</h4>
+                            <p class="text-[11px] sm:text-xs text-zinc-400">Garansi Kualitas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pure Typography & CSS Visual Badge -->
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md h-80 sm:h-96 bg-zinc-950 rounded-3xl border border-zinc-800 p-8 flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/40 to-transparent pointer-events-none"></div>
+                        <div class="w-20 h-20 rounded-2xl bg-black border border-zinc-700 flex items-center justify-center mb-6 shadow-xl group-hover:scale-105 transition-transform duration-300">
+                            <i class="fa-solid fa-scissors text-3xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-white tracking-wider mb-2">SAVELLE GARMENT</h3>
+                        <p class="text-xs text-zinc-400 font-mono mb-4">COTTON COMBED 30s - 16s</p>
+                        <div class="px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-[11px] text-zinc-300 font-semibold">
+                            KAOS • PDH • JAKET • HOODIE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-16 sm:py-20 bg-zinc-950 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                <span class="text-zinc-300 text-xs font-bold uppercase tracking-widest bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">Layanan Unggulan</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">Solusi Konveksi <span class="text-zinc-400">Menyeluruh</span></h2>
+                <p class="text-zinc-400 text-sm sm:text-base">Dari pembuatan sample hingga produksi massal dengan standar kontrol kualitas ketat.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-black p-8 rounded-3xl border border-zinc-800 space-y-4 hover:border-white/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900 text-white flex items-center justify-center text-xl border border-zinc-800">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Kaos & Oversized Custom</h3>
+                    <p class="text-sm text-zinc-400">Spesialis kaos distro dengan bahan Cotton Combed (sedia 30s sampai 16s), sablon Plastisol / DTF berteknologi tinggi.</p>
+                </div>
+                <div class="bg-black p-8 rounded-3xl border border-zinc-800 space-y-4 hover:border-white/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900 text-white flex items-center justify-center text-xl border border-zinc-800">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Kemeja PDH & PDL Organisasi</h3>
+                    <p class="text-sm text-zinc-400">Pembuatan seragam kerja, kemeja himpunan mahasiswa, dan PDL lapangan dengan bordir komputer presisi rapi.</p>
+                </div>
+                <div class="bg-black p-8 rounded-3xl border border-zinc-800 space-y-4 hover:border-white/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900 text-white flex items-center justify-center text-xl border border-zinc-800">
+                        <i class="fa-solid fa-vest"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Jaket, Hoodie & Varsity</h3>
+                    <p class="text-sm text-zinc-400">Berbagai model jaket kampus, hoodie fleece tebal, serta varsity jacket eksklusif untuk identitas kelompok Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="katalog" class="py-16 sm:py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                <span class="text-zinc-300 text-xs font-bold uppercase tracking-widest bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">Katalog Produk</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">Varian & <span class="text-zinc-400">Spesifikasi</span></h2>
+                <p class="text-zinc-400 text-sm sm:text-base">Pilihan varian produk dengan spesifikasi bahan premium cotton combed sedia 30s sampai 16s.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Category 1: Kaos & Oversized -->
+                <div class="bg-zinc-950 rounded-3xl border border-zinc-800 overflow-hidden p-6 space-y-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-zinc-900 text-zinc-300 rounded-full border border-zinc-800">Kaos & Oversized</span>
+                            <span class="text-xs font-semibold text-white">Mulai Rp 45.000</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Kaos Distro & Oversized</h3>
+                        <p class="text-xs text-zinc-400 mb-4">Dilengkapi pilihan bahan cotton combed sedia dari 30s hingga 16s yang tebal, lembut, dan adem.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 rounded-2xl p-6 text-center space-y-3">
+                        <span class="text-[10px] font-mono tracking-widest text-zinc-400 uppercase">Spesifikasi Jahitan</span>
+                        <div class="text-sm font-bold text-white">Jahitan Rantai Standar Distro</div>
+                        <p class="text-xs text-zinc-400">Sablon Plastisol / DTF Berkualitas Tinggi</p>
+                    </div>
+
+                    <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20tertarik%20pesan%20Kaos%20/%20Oversized." target="_blank" class="w-full py-3 bg-white hover:bg-zinc-200 text-black font-semibold rounded-xl text-center text-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Kaos via WA
+                    </a>
+                </div>
+
+                <!-- Category 2: Kemeja PDH Organisasi -->
+                <div class="bg-zinc-950 rounded-3xl border border-zinc-800 overflow-hidden p-6 space-y-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-zinc-900 text-zinc-300 rounded-full border border-zinc-800">Kemeja PDH/PDL</span>
+                            <span class="text-xs font-semibold text-white">Mulai Rp 145.000</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Kemeja PDH Organisasi</h3>
+                        <p class="text-xs text-zinc-400 mb-4">Desain kemeja organisasi kampus, himpunan mahasiswa, dan seragam resmi kantor dengan bordir komputer custom.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 rounded-2xl p-6 text-center space-y-3">
+                        <span class="text-[10px] font-mono tracking-widest text-zinc-400 uppercase">Spesifikasi Bahan</span>
+                        <div class="text-sm font-bold text-white">Japan Drill / American Drill</div>
+                        <p class="text-xs text-zinc-400">Bordir Komputer Presisi & Rapih</p>
+                    </div>
+
+                    <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20tertarik%20pesan%20Kemeja%20PDH." target="_blank" class="w-full py-3 bg-white hover:bg-zinc-200 text-black font-semibold rounded-xl text-center text-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Kemeja via WA
+                    </a>
+                </div>
+
+                <!-- Category 3: Jaket, Hoodie & Varsity -->
+                <div class="bg-zinc-950 rounded-3xl border border-zinc-800 overflow-hidden p-6 space-y-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-zinc-900 text-zinc-300 rounded-full border border-zinc-800">Jaket & Varsity</span>
+                            <span class="text-xs font-semibold text-white">Mulai Rp 120.000</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Jaket, Hoodie & Varsity</h3>
+                        <p class="text-xs text-zinc-400 mb-4">Pilihan jaket fleece cotton premium, hoodie distro, dan varsity jacket dengan kancing snap eksklusif.</p>
+                    </div>
+
+                    <div class="bg-black border border-zinc-800 rounded-2xl p-6 text-center space-y-3">
+                        <span class="text-[10px] font-mono tracking-widest text-zinc-400 uppercase">Spesifikasi Kain</span>
+                        <div class="text-sm font-bold text-white">Fleece Cotton / Taslan</div>
+                        <p class="text-xs text-zinc-400">Hangat, Nyaman & Tahan Lama</p>
+                    </div>
+
+                    <a href="https://wa.me/6285212627456?text=Halo%20SAVELLE,%20saya%20tertarik%20pesan%20Jaket%20/%20Varsity." target="_blank" class="w-full py-3 bg-white hover:bg-zinc-200 text-black font-semibold rounded-xl text-center text-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Pesan Jaket via WA
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-16 sm:py-20 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-zinc-300 text-xs font-bold uppercase tracking-widest bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">Tentang SAVELLE</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Konveksi Eksklusif Berstandar Butik di Kartasura</h2>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                        SAVELLE hadir dengan komitmen memberikan kualitas jahitan terbaik yang tidak kompromi. Kami melayani pembuatan berbagai macam pakaian custom untuk brand clothing line, universitas, instansi, dan komunitas di seluruh Indonesia.
+                    </p>
+                    <ul class="space-y-3 text-sm text-zinc-300">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-white"></i> Cotton Combed lengkap dari 30s sampai 16s</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-white"></i> Kontrol kualitas (QC) ketat sebelum pengiriman</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-white"></i> Pengerjaan tepat waktu sesuai deadline</li>
+                    </ul>
+                </div>
+                <div class="bg-black p-8 rounded-3xl border border-zinc-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white">Langkah Pemesanan Mudah</h3>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start">
+                            <span class="w-8 h-8 rounded-full bg-white text-black font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Konsultasi Desain & Bahan</h4>
+                                <p class="text-xs text-zinc-400">Kirimkan rincian desain, jumlah, dan bahan via WhatsApp.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <span class="w-8 h-8 rounded-full bg-white text-black font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Pembayaran DP & Sesi Sample</h4>
+                                <p class="text-xs text-zinc-400">Konfirmasi pesanan dan proses produksi dimulai.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <span class="w-8 h-8 rounded-full bg-white text-black font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Produksi & Pengiriman</h4>
+                                <p class="text-xs text-zinc-400">Pesanan selesai dan dikirim aman ke alamat Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-16 sm:py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                <span class="text-zinc-300 text-xs font-bold uppercase tracking-widest bg-zinc-900 px-3 py-1 rounded-full border border-zinc-800">Kontak & Lokasi</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">Kunjungi Workshop <span class="text-zinc-400">Kami</span></h2>
+                <p class="text-zinc-400 text-sm sm:text-base">Silakan hubungi atau kunjungi workshop kami untuk konsultasi langsung.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-zinc-950 p-6 rounded-3xl border border-zinc-800 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center text-xl mx-auto border border-zinc-800">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Alamat Workshop</h4>
+                    <p class="text-xs text-zinc-400">Jl. Kasuari No.107 Gonilan, Kartasura, Sukoharjo, Jawa Tengah</p>
+                </div>
+                <div class="bg-zinc-950 p-6 rounded-3xl border border-zinc-800 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center text-xl mx-auto border border-zinc-800">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Jam Operasional</h4>
+                    <p class="text-xs text-zinc-400">Setiap Hari: 07.00 - 22.00 WIB</p>
+                </div>
+                <div class="bg-zinc-950 p-6 rounded-3xl border border-zinc-800 text-center space-y-3">
+                    <div class="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center text-xl mx-auto border border-zinc-800">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h4 class="font-bold text-white">WhatsApp & Sosmed</h4>
+                    <p class="text-xs text-zinc-400">+62 852-1262-7456<br>IG & TikTok: @savelle_store</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-zinc-950 border-t border-zinc-900 text-zinc-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-black tracking-widest text-lg mb-1">SAVELLE</h3>
+                    <p class="text-[9px] text-zinc-400 font-semibold tracking-[0.2em] uppercase mb-3">NOT FOR EVERYONE!</p>
+                    <p class="text-zinc-400">Pusat konveksi pakaian eksklusif dan berkualitas tinggi di Kartasura.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Media Sosial</h4>
+                    <div class="space-y-1">
+                        <p><i class="fa-brands fa-instagram text-white mr-2"></i> <a href="https://instagram.com/savelle_store" target="_blank" class="hover:underline text-white">@savelle_store</a></p>
+                        <p><i class="fa-brands fa-tiktok text-white mr-2"></i> <a href="https://tiktok.com/@savelle_store" target="_blank" class="hover:underline text-white">@savelle_store</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">Kontak</h4>
+                    <p><i class="fa-solid fa-location-dot text-white mr-2"></i> Jl. Kasuari No.107 Gonilan, Kartasura</p>
+                    <p class="mt-1"><i class="fa-brands fa-whatsapp text-white mr-2"></i> +62 852-1262-7456</p>
+                </div>
+            </div>
+            <div class="border-t border-zinc-900 pt-6 text-center text-zinc-500">
+                <p>&copy; 2026 SAVELLE. Seluruh Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
